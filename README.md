@@ -15,7 +15,7 @@
 **Data Resource**: https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data
 
 
- # [EDA](https://github.com/Jaspreetsm21/airbnb_prices_ML/blob/master/Cleaning%20and%20EDA.ipynb) 
+ # [EDA](https://github.com/Jaspreetsm21/airbnb_prices__ML/blob/master/Cleaning%20and%20EDA.ipynb) 
   ![](/images/listing.png)
   ![](/images/room.png)
   ![](/images/price_property.png)
@@ -71,7 +71,7 @@ Lasso Regression: MAE = 32
 
 ![](/images/profile.PNG)
 
-[2. App](https://github.com/Jaspreetsm21/airbnb_prices_ML/blob/master/app.py)
+[2. App](https://github.com/Jaspreetsm21/airbnb_prices__ML/blob/master/app.py)
 
 python script for deploying the model using flask.
 
