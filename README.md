@@ -1,5 +1,5 @@
 # Airbnb Price Estimator: Data Science end to end Project Overview
-Created a tool that estimates airbnb prices (MAE ~ £32) to help consumers find the best deal.
+Created a tool that estimates airbnb prices (MAE ~ $31.8) to help consumers find the best deal.
 
 1 - Carried out EDA on Airbnb open data set across NYC and finding key insights.
 
@@ -56,11 +56,11 @@ Random Forest – Again, with the sparsity associated with the data, I thought t
 
 The Random Forest model far outperformed the other approaches on the test and validation sets.
 
-Random Forest: MAE = 32
+Random Forest: MAE = $31.8
 
-Decision Tree: MAE = 47
+Decision Tree: MAE = $43.2
 
-Lasso Regression: MAE = 32
+Lasso Regression: MAE = $37.6
 
 
  # [Production](https://airbnbnycprices.herokuapp.com/) 
