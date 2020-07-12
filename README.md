@@ -4,7 +4,7 @@
 
 2.0 - Optimized Linear, Lasso, Decision Tree and Random Forest Regressors using GridsearchCV to reach the best model.
 
-2.1 - Built a client facing API using flask and deploy the model on Heroku. 
+2.1 - Built a client facing API using flask and deploy the model on [Heroku](https://airbnbnycprices.herokuapp.com/). 
 
 # Code and Resources Used
 
@@ -62,7 +62,7 @@ Decision Tree: MAE = 47
 Lasso Regression: MAE = 32
 
 
- # Production 
+ # [Production](https://airbnbnycprices.herokuapp.com/) 
  In this step, I built a client facing API endpoint and model was hosted on Heroku.
  
 ## Setup for Deployment of the model on Heroku:
