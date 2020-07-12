@@ -39,7 +39,7 @@ The number of days when the listing is available for booking is much lower for M
 
 Home and Private rooms tend to get the most reviews and the majority of these rooms are based in Manhattan and Queens.
 
-# Model 
+# [Model](https://github.com/Jaspreetsm21/airbnb_prices__ML/blob/master/model.ipynb) 
  First, I transformed the categorical variables into dummy variables. I also split the data into train and test sets with a test size of 35%.
 
 I tried four different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
