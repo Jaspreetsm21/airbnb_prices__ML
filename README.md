@@ -1,4 +1,5 @@
 # Airbnb Price Estimator: Data Science end to end Project Overview
+Created a tool that estimates airbnb prices (MAE ~ £32) to help consumers find the best deal.
 
 1 - Carried out EDA on Airbnb open data set across NYC and finding key insights.
 
