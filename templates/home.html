@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>{{title}}</title>
+    
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles5.css') }}">
+    <script src="https://use.fontawesome.com/3fa36ae73c.js"></script>
+
+    <style>
+        h1 { color: #FF585D; }
+        p {color:#FF585D}
+      </style>
+
+</head>
+<body>
+    <img src="static/logo.png" alt="HTML5 Icon"  style="width:400px;height:200px;">
+    <div class="container">
+        <div class="centered">
+            
+       <center><h1><b>airbnb  </b><span class="badge badge-secondary">   Predict Prices in NYC</span></h1></center>
+   
+            
+        </div>
+        </div>
+
+    <!-- Prediction Form -->
+    <div class='div2'>
+        <center><form action="{{ url_for('predict') }}" method="POST">
+            <!-- Neighbourhood Dropdown -->
+            <select class="form-input align-center" name="neighbour">
+                <option value="none">--- Select a NeighbourHood ---</option>
+                <option value="Bronx">Bronx</option>
+                <option value="Brooklyn">Brooklyn</option>
+                <option value="Manhattan">Manhattan</option>
+                <option value="Queens">Queens</option>
+                <option value="Staten_Island">Staten Island</option>
+            </select><br>
+            <!-- Room Dropdown -->
+            <select class="form-input align-center" name="room">
+                <option value="none">--- Select a Type of Room ---</option>
+                <option value="Entire_home_apt">Entire home&apt</option>
+                <option value="Private_room">Private room</option>
+                <option value="Shared_room">Shared room</option>
+            </select><br>
+            <input class="form-input" type="text" name="latitude" title="Please enter the Latitude, you can choose from the Airbnb Listing Below" placeholder="latitude" required ><br>
+            <input class="form-input" type="text" name="longitude" title="Please enter the Longitude, you can choose from the Airbnb Listing Below"  placeholder="longitude" required ><br>
+            <input class="form-input" type="text" name="minimum_nights" placeholder="Minimum nights stay?" required ><br>
+            <input class = "form-input" type="text" name ="availability_365" placeholder="Availability(e.g 200 days)" title = 'How days out of 365, the property is availability?'required ><br>
+            <input class = "form-input" type="text" name ="calculated_host_listings_count" placeholder="No. of times Host Listed?" title = 'How many times property been listed before?'required ><br>
+            <input class = "form-input" type="text" name ="reviews_per_month" placeholder="Reviews Per Month" title = 'Avg Number of Reviews Per Month' required ><br>
+    <input type="submit" class="btn btn-secondary" value="Predict Prices">
+    </form></center>
+    </div>
+  <!-- Result -->
+  <div class="map">
+    <center><p style="background-color:lightblue;font-size:25px" class='map-p'> <b></b></p></center>
+</div>
+    <img src="static/listing.png" alt="HTML5 Icon" >
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
